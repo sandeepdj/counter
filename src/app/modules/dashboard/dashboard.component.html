@@ -1,0 +1,114 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Dashboard
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+    <section class="content">
+       
+        <div class="row clearfix">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box bg-pink hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">playlist_add_check</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">NEW TASKS</div>
+                        <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">125</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="bg-cyan hover-expand-effect info-box">
+                    <div class="icon">
+                        <i class="material-icons">help</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">NEW TICKETS</div>
+                        <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20">257</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box bg-light-green hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">forum</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">NEW COMMENTS</div>
+                        <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">243</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box bg-orange hover-expand-effect">
+                    <div class="icon">
+                        <i class="material-icons">person_add</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">NEW VISITORS</div>
+                        <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20">1225</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <mat-card class="dbox">
+                    <mat-card-header class="dbox-header">
+                        <mat-card-title> Title 1 </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <table class="table table-bordered">
+                            <tr *ngFor="let color of colorsList">
+                                <td>
+                                    <i class="material-icons">edit</i>
+                                </td>
+                                <td>
+                                    <mat-checkbox></mat-checkbox>
+                                </td>
+                                <td>{{color.isbn}}</td>
+                                <td>{{color.title}}</td>
+                                <td>{{color.author}}</td>
+                                <td>
+                                    <i class="material-icons" (click)="openDialog()">delete_forever</i>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-md-4">
+                <mat-card class="dbox">
+                    <mat-card-header class="dbox-header">
+                        <mat-card-title> Title 2 </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+
+                    </mat-card-content>
+                </mat-card>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card class="dbox">
+                    <mat-card-header class="dbox-header">
+                        <mat-card-title> Widgets </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+
+                    </mat-card-content>
+                </mat-card>
+            </div>
+
+        </div>
+    </section>
+</div>
